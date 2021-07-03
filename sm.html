@@ -1,0 +1,105 @@
+<?php
+ include_once 'include/dbh.inc.php';
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.save {background-color: #04AA6D;} /* Green */
+.save:hover {background-color: #46a049;}
+
+.send {background-color: #2196F3;} /* Blue */
+.send:hover {background: #0b7dda;}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>محرك 1</h1>
+<div class="slidecontainer">
+  <input type="range" min="0" max="180" value1="90" class="slider" id="myRange1">
+  <p>Value1: <span id="demo1"></span></p>
+</div>
+
+<h1> محرك 2 </h1>
+<div class="slidecontainer">
+  <input type="range" min="0" max="180" value2="90" class="slider" id="myRange2">
+  <p>Value2: <span id="demo2"></span></p>
+</div>
+
+<h1> محرك 3 </h1>
+<div class="slidecontainer">
+  <input type="range" min="0" max="180" value3="90" class="slider" id="myRange3">
+  <p>Value3: <span id="demo3"></span></p>
+</div>
+
+<h1> محرك 4 </h1>
+<div class="slidecontainer">
+  <input type="range" min="0" max="180" value4="90" class="slider" id="myRange4">
+  <p>Value4: <span id="demo4"></span></p>
+</div>
+
+<h1> محرك 5 </h1>
+<div class="slidecontainer">
+  <input type="range" min="0" max="180" value5="90" class="slider" id="myRange5">
+  <p>Value5: <span id="demo5"></span></p>
+</div>
+
+<h1> محرك 6 </h1>
+<div class="slidecontainer">
+  <input type="range" min="0" max="180" valuee6="90" class="slider" id="myRangee6">
+  <p>Value6: <span id="demoo6"></span></p>
+</div>
+
+<button class="btn save">حفظ</button>
+<button class="btn send">تشغيل</button>
+
+</body>
+</html>
